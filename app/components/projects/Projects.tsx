@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Projects = () => {
   return (
-    <div className="lg:4/12 md:w-6/12 w-full md:p-3 sm:p-3 p-1 mb-5">
+    <div className="lg:w-4/12 md:w-6/12 w-full md:p-3 sm:p-3 p-1 mb-5">
       <div className="card bg-base-100 shadow-xl">
         <figure>
           <Image
