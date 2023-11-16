@@ -25,3 +25,22 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+p {
+  color: #a4a4a4;
+}
+
+.heading_1 {
+  font-family: 'Heebo', sans-serif;
+  font-size: 158px;
+  line-height: 148px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-top: 10vh;
+}
+
+.heading_2 {
+  font-family: 'Heebo', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+}
