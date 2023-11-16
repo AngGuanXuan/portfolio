@@ -17,6 +17,14 @@ const Header = () => {
     ["rgba(255, 255, 255, 0)", "rgba(64, 64, 64, 0.35)"]
   );
 
+  function goSection() {
+    window.addEventListener(
+      "hashchange",
+      () => window.history.pushState({}, "", "/"),
+      {}
+    );
+  }
+
   return (
     // Target ref for whole window
     <div ref={targetRef} className="min-h-screen w-full absolute">
@@ -34,31 +42,48 @@ const Header = () => {
               className="menu dropdown-content mt-3 z-[0] p-2 shadow text-lg font-semibold bg-slate-800 backdrop-blur-lg rounded-box w-40"
             >
               <li>
-                <a href="#main">Home</a>
+                <a onClick={goSection} href="#main">
+                  Home
+                </a>
               </li>
               <li>
-                <a href="#project">Projects</a>
+                <a onClick={goSection} href="#project">
+                  Projects
+                </a>
               </li>
               <li>
-                <a href="#expertise">Expertise</a>
+                <a onClick={goSection} href="#expertise">
+                  Expertise
+                </a>
               </li>
               <li>
-                <a href="#contact">Contact</a>
+                <a onClick={goSection} href="#contact">
+                  Contact
+                </a>
               </li>
             </ul>
           </div>
           <ul className="md:flex hidden menu menu-horizontal px-1 text-lg font-semibold justify-center">
             <li>
-              <a href="#main">Home</a>
+              <a onClick={goSection} href="#main">
+                Home
+              </a>
             </li>
             <li>
-              <a href="#project">Projects</a>
+              <a onClick={goSection} href="#project">
+                Projects
+              </a>
             </li>
             <li>
-              <a href="#expertise"> Expertise</a>
+              <a onClick={goSection} href="#expertise">
+                {" "}
+                Expertise
+              </a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a onClick={goSection} href="#contact">
+                Contact
+              </a>
             </li>
           </ul>
         </motion.div>
