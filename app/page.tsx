@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Header from "./components/layouts/header/Header";
 import Scrolldown from "./components/scrolldown/Scrolldown";
 import Projects from "./components/projects/Projects";
@@ -12,22 +13,23 @@ export default function Home() {
       <Header />
       {/* Banner */}
       <section className="min-h-screen mx-auto px-4 py-24 relative flex justify-center">
-        <div className="container">
+        <div className="container mx-auto">
           <h1 className="heading_1">
             Websites & <br />
             Design
           </h1>
-          <div className="flex flex-row justify-between my-20">
-            <div className="w-5/12">
+          <div className="flex md:flex-row flex-col justify-between my-20">
+            <div className="md:w-6/12 md:mb-0 mb-10">
               <h3 className="font-semibold text-lg">Let&apos;s Talk</h3>
-              <a
-                href="mailto:stephanoxuan@gmailcom?subject=Come%20Work%20for%20Us!&body=Please%20come%20and%20work'%20for%20us%20!%0D%0A%0D%0ACheers%2C%0D%0AHappy%20Company"
-                className="mt-3"
+              <Link
+                href="mailto:stephanoxuan@gmailcom?subject=Come%20Work%20for%20Us!&body=Please%20come%20and%20work%20for%20us%20!%0D%0A%0D%0ACheers%2C%0D%0AHappy%20Company"
+                target="_blank"
+                className="mt-3 hover:text-neutral-400"
               >
                 stephanoxuan@gmail.com
-              </a>
+              </Link>
             </div>
-            <div className="w-5/12">
+            <div className="md:w-6/12">
               <p className="text-justify">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 convallis tristique enim sed condimentum. Fusce vitae vehicula
@@ -49,7 +51,7 @@ export default function Home() {
           <div className="flex flex-row justify-between">
             <div>
               <h2 className="heading_2">Projects</h2>
-              <p className="text-justify w-4/12 mt-3">
+              <p className="text-justify lg:w-4/12 md:w-8/12 sm:w-10/12 w-full mt-3">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                 feugiat volutpat dui sit amet posuere. In lobortis lobortis
                 magna, eget.
@@ -59,7 +61,12 @@ export default function Home() {
               <a>More</a>
             </div> */}
           </div>
-          <div className="grid grid-cols-3 gap-4 mt-10">
+          {/* <div className="grid grid-cols-[repeat(auto-fit,_33.333333%)] md:gap-4 gap-8 mx-auto mt-10 justify-center">
+            <Projects />
+            <Projects />
+            <Projects />
+          </div> */}
+          <div className="flex flex-wrap mx-auto mt-10 justify-center">
             <Projects />
             <Projects />
             <Projects />
@@ -75,7 +82,7 @@ export default function Home() {
               <h2 className="heading_2">Expertise</h2>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-8 mt-10">
+          <div className="flex flex-wrap mx-auto mt-10 justify-center">
             <Expertise></Expertise>
             <Expertise />
             <Expertise />
@@ -95,9 +102,9 @@ export default function Home() {
           <div className="flex flex-row justify-between">
             <div>
               <h2 className="heading_2">Testimonials</h2>
-              <div className="flex flex-row justify-between">
-                <div className="w-9/12">
-                  <p className="mt-5 text-2xl text-justify">
+              <div className="flex flex-wrap justify-between">
+                <div className="md:w-9/12 w-full">
+                  <p className="md:mb-0 mb-5 mt-5 text-2xl text-justify">
                     &quot;Lorem ipsum dolor sit amet, consectetur adipiscing
                     elit. Sed ultrices finibus tortor, vitae ornare neque
                     eleifend eu. Donec justo libero, tempus eu tincidunt sed,
@@ -107,7 +114,7 @@ export default function Home() {
                     sollicitudin. Phasellus luctus.&quot;
                   </p>
                 </div>
-                <div className="w-3/12 text-end self-end">
+                <div className="md:w-3/12 w-full text-end self-end">
                   <h4 className="text-lg font-semibold">Nigel</h4>
                   <span className="text-neutral-400">Liverpool Manager</span>
                 </div>
@@ -122,12 +129,13 @@ export default function Home() {
         <div className="flex flex-col">
           <h1 className="heading_1">Call Me Maybe</h1>
           <div className="flex justify-center mt-10">
-            <a
-              href="mailto:stephanoxuan@gmailcom?subject=Come%20Work%20for%20Us!&body=Please%20come%20and%20work'%20for%20us%20!%0D%0A%0D%0ACheers%2C%0D%0AHappy%20Company"
-              className="btn btn-neutral text-lg h-full py-5 px-7"
+            <Link
+              href="mailto:stephanoxuan@gmailcom?subject=Come%20Work%20for%20Us!&body=Please%20come%20and%20work%20for%20us%20!%0D%0A%0D%0ACheers%2C%0D%0AHappy%20Company"
+              target="_blank"
+              className="btn btn-neutral text-lg h-full py-5 px-7 "
             >
               Contact Now
-            </a>
+            </Link>
           </div>
         </div>
       </section>

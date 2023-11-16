@@ -4,7 +4,7 @@ import { faCode } from "@fortawesome/free-solid-svg-icons";
 
 const Expertise = () => {
   return (
-    <div className="mb-5">
+    <div className="md:w-6/12 w-full md:p-3 sm:p-3 p-1 mb-5">
       <h3 className="text-2xl font-semibold flex">
         <FontAwesomeIcon
           className="mr-3"

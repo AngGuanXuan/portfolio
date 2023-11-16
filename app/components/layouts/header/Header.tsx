@@ -1,6 +1,8 @@
 import React from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useRef } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const targetRef = useRef<HTMLDivElement>(null);
@@ -12,18 +14,40 @@ const Header = () => {
   const background = useTransform(
     scrollYProgress,
     [0, 0.5],
-    ["rgba(255, 255, 255, 0)", "rgba(69, 69, 69, 0.35)"]
+    ["rgba(255, 255, 255, 0)", "rgba(64, 64, 64, 0.35)"]
   );
 
   return (
     // Target ref for whole window
-    <div ref={targetRef} className="min-h-screen w-full fixed z-10">
-      <div className="navbar ease-in-out duration-300 justify-center">
+    <div ref={targetRef} className="min-h-screen w-full absolute">
+      <div className="navbar ease-in-out duration-300 md:justify-center justify-end fixed z-10">
         <motion.div
           style={{ background }}
-          className="rounded-full w-6/12 shadow-inner backdrop-blur-lg justify-center"
+          className="rounded-full lg:w-6/12 md:w-8/12 mt-5 shadow-inner bg backdrop-blur-lg justify-center"
         >
-          <ul className="menu menu-horizontal px-1 text-lg font-semibold">
+          <div className="dropdown dropdown-end">
+            <label tabIndex={0} className="btn btn-ghost md:hidden p-5 h-full">
+              <FontAwesomeIcon icon={faBars} size="2x" />
+            </label>
+            <ul
+              tabIndex={0}
+              className="menu dropdown-content mt-3 z-[0] p-2 shadow text-lg font-semibold bg-slate-800 backdrop-blur-lg rounded-box w-40"
+            >
+              <li>
+                <a>Home</a>
+              </li>
+              <li>
+                <a>About</a>
+              </li>
+              <li>
+                <a>Project</a>
+              </li>
+              <li>
+                <a>Contact</a>
+              </li>
+            </ul>
+          </div>
+          <ul className="md:flex hidden menu menu-horizontal px-1 text-lg font-semibold justify-center">
             <li>
               <a>Home</a>
             </li>
