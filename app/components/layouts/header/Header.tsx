@@ -58,7 +58,7 @@ const Header = () => {
               <a href="#expertise"> Expertise</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#contactgit sta">Contact</a>
             </li>
           </ul>
         </motion.div>
