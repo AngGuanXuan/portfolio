@@ -34,31 +34,31 @@ const Header = () => {
               className="menu dropdown-content mt-3 z-[0] p-2 shadow text-lg font-semibold bg-slate-800 backdrop-blur-lg rounded-box w-40"
             >
               <li>
-                <a>Home</a>
+                <a href="#main">Home</a>
               </li>
               <li>
-                <a>About</a>
+                <a href="#project">Projects</a>
               </li>
               <li>
-                <a>Project</a>
+                <a href="#expertise">Expertise</a>
               </li>
               <li>
-                <a>Contact</a>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </div>
           <ul className="md:flex hidden menu menu-horizontal px-1 text-lg font-semibold justify-center">
             <li>
-              <a>Home</a>
+              <a href="#main">Home</a>
             </li>
             <li>
-              <a>About</a>
+              <a href="#project">Projects</a>
             </li>
             <li>
-              <a>Project</a>
+              <a href="#expertise"> Expertise</a>
             </li>
             <li>
-              <a>Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </motion.div>
