@@ -30,12 +30,13 @@ const Projects = () => {
         <>
           <div className="lg:w-4/12 md:w-6/12 w-full md:p-3 sm:p-3 p-1 mb-5">
             <div className="card bg-base-100 shadow-xl">
-              <figure>
+              <figure className="flex">
                 <Image
                   src={projects.image}
-                  width={500}
+                  width={620}
                   height={500}
                   alt="IMAGE"
+                  className="object-cover transition ease-in-out duration-300 hover:scale-110"
                 />
               </figure>
               <div className="card-body">

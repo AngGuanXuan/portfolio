@@ -6,6 +6,10 @@ import Scrolldown from "./components/scrolldown/Scrolldown";
 import Projects from "./components/projects/Projects";
 import Expertise from "./components/Expertise";
 import Typewritter from "./components/typewritter/Typewritter";
+import Marquee from "./components/marquee_logo/Marquee_Logo";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
@@ -14,12 +18,18 @@ export default function Home() {
       {/* Banner */}
       <section className="min-h-screen mx-auto px-4 py-24 relative flex justify-center">
         <div className="container mx-auto">
+          <h4 className="md:text-3xl text-xl md:text-start text-center tracking-wide">
+            Hello, my name is
+          </h4>
           <h1 className="heading_1">
-            Websites & <br />
-            Design
+            Ang <br />
+            Guan Xuan
           </h1>
+          <h4 className="md:text-4xl text-2xl md:text-start text-center font-semibold tracking-wide">
+            Website & Design
+          </h4>
           <div className="flex md:flex-row flex-col justify-between my-20">
-            <div className="md:w-6/12 md:mb-0 mb-10">
+            <div className="md:w-6/12 md:mb-0 mb-10 md:text-start text-center">
               <h3 className="font-semibold text-lg">Let&apos;s Talk</h3>
               <Link
                 href="mailto:stephanoxuan@gmailcom?subject=Come%20Work%20for%20Us!&body=Please%20come%20and%20work%20for%20us%20!%0D%0A%0D%0ACheers%2C%0D%0AHappy%20Company"
@@ -34,7 +44,7 @@ export default function Home() {
                 Unlock the full potential of your online presence with our
                 expert website development services &#8722; let&apos;s create a
                 website that truly represents your brand and engages your
-                audience effectively
+                audience effectively.
               </p>
             </div>
           </div>
@@ -56,15 +66,7 @@ export default function Home() {
                 with others, ensuring project success and team cohesion.
               </p>
             </div>
-            {/* <div>
-              <a>More</a>
-            </div> */}
           </div>
-          {/* <div className="grid grid-cols-[repeat(auto-fit,_33.333333%)] md:gap-4 gap-8 mx-auto mt-10 justify-center">
-            <Projects />
-            <Projects />
-            <Projects />
-          </div> */}
           <div className="flex flex-wrap mx-auto mt-10 justify-center">
             <Projects />
           </div>
@@ -84,6 +86,14 @@ export default function Home() {
           </div>
           <div className="flex flex-wrap mx-auto mt-10 justify-center">
             <Expertise />
+          </div>
+          <div>
+            <h3 className="text-center text-2xl font-semibold text-neutral-300 mt-10">
+              Languages & Tools
+            </h3>
+            <div className="mt-10">
+              <Marquee />
+            </div>
           </div>
         </div>
       </section>
@@ -128,14 +138,33 @@ export default function Home() {
       {/* Contact Us */}
       <section className="mx-auto flex justify-center py-24" id="contact">
         <div className="flex flex-col">
-          <h1 className="heading_1">Call Me Maybe</h1>
+          <h1 className="heading_1">Contact Me Now</h1>
           <div className="flex justify-center mt-10">
             <Link
               href="mailto:stephanoxuan@gmailcom?subject=Come%20Work%20for%20Us!&body=Please%20come%20and%20work%20for%20us%20!%0D%0A%0D%0ACheers%2C%0D%0AHappy%20Company"
               target="_blank"
               className="btn btn-neutral text-lg h-full py-5 px-7 "
             >
-              Contact Now
+              Contact By E-mail Now
+            </Link>
+          </div>
+          <div className="divider my-10">OR</div>
+          <div className="flex md:flex-row flex-col justify-center gap-10">
+            <Link
+              href="https://www.linkedin.com/in/ang-guan-xuan/"
+              target="_blank"
+              className="btn btn-outline btn-info w-60 md:mx-0 mx-auto"
+            >
+              <FontAwesomeIcon icon={faLinkedin} />
+              LinkedIn
+            </Link>
+            <Link
+              href="tel:+60122807988"
+              target="_blank"
+              className="btn btn-outline btn-info w-60 md:mx-0 mx-auto"
+            >
+              <FontAwesomeIcon icon={faPhone} />
+              Call Me: +6012-2807988
             </Link>
           </div>
         </div>

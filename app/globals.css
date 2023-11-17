@@ -49,11 +49,12 @@ p {
 
 .heading_1 {
   font-family: 'Heebo', sans-serif;
-  font-size: 158px;
-  line-height: 148px;
+  font-size: 148px;
+  line-height: 155px;
   font-weight: 600;
   letter-spacing: 1px;
-  margin-top: 10vh;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .heading_2 {
@@ -66,28 +67,30 @@ p {
   
 }
 
-@media  only screen and (max-width: 1200px) and (min-width: 1025px ){
+@media  only screen and (max-width: 1200px) and (min-width: 1024px ){
   
 }
 
-@media  only screen and (max-width: 1024px) and (min-width: 769px) {
+@media  only screen and (max-width: 1023px) and (min-width: 768px) {
   .heading_1 {
     font-size: 132px;
     line-height: 132px;
   }
 }
 
-@media  only screen and (max-width: 768px) and (min-width: 481px) {
+@media  only screen and (max-width: 767px) and (min-width: 480px) {
   .heading_1 {
     font-size: 78px;
     line-height: 78px;
+    text-align: center;
   }
 }
 
-@media  only screen and (max-width: 480px) and (min-width: 320px) {
+@media  only screen and (max-width: 479px) and (min-width: 320px) {
   .heading_1 {
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 52px;
+    line-height: 68px;
+    text-align: center;
   }
 }
 
@@ -95,6 +98,7 @@ p {
   .heading_1 {
     font-size: 42px;
     line-height: 42px;
+    text-align: center;
   }
 }
 
