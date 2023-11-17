@@ -68,7 +68,7 @@ const Marquee_Logo = () => {
         <Image
           className="relative mx-20
           "
-          src="images/logos/laravel.svg"
+          src="/images/logos/laravel.svg"
           alt="Laravel Logo"
           width={60}
           height={37}
@@ -77,7 +77,7 @@ const Marquee_Logo = () => {
         <Image
           className="relative rounded mx-20
           "
-          src="images/logos/jquery.svg"
+          src="/images/logos/jquery.svg"
           alt="JQuery Logo"
           width={140}
           height={37}
@@ -86,7 +86,7 @@ const Marquee_Logo = () => {
         <Image
           className="relative mx-20
           "
-          src="images/logos/figma.svg"
+          src="/images/logos/figma.svg"
           alt="Figma Logo"
           width={50}
           height={37}
@@ -95,7 +95,7 @@ const Marquee_Logo = () => {
         <Image
           className="relative mx-20
           "
-          src="images/logos/gitlab.svg"
+          src="/images/logos/gitlab.svg"
           alt="Gitlab Logo"
           width={200}
           height={37}
@@ -104,7 +104,7 @@ const Marquee_Logo = () => {
         <Image
           className="relative mx-20
           "
-          src="images/logos/clickup.svg"
+          src="/images/logos/clickup.svg"
           alt="Click Up Logo"
           width={180}
           height={37}
@@ -113,7 +113,7 @@ const Marquee_Logo = () => {
         <Image
           className="relative mx-20
           "
-          src="images/logos/sourcetree.svg"
+          src="/images/logos/sourcetree.svg"
           alt="SourceTree Logo"
           width={70}
           height={37}
@@ -129,7 +129,7 @@ const Marquee_Logo = () => {
         <Image
           className="relative mx-20
           "
-          src="images/logos/html5.svg"
+          src="/images/logos/html5.svg"
           alt="HTML 5 Logo"
           width={85}
           height={37}
@@ -138,7 +138,7 @@ const Marquee_Logo = () => {
         <Image
           className="relative mx-20
           "
-          src="images/logos/css3.svg"
+          src="/images/logos/css3.svg"
           alt="CSS 3 Logo"
           width={60}
           height={37}
@@ -146,7 +146,7 @@ const Marquee_Logo = () => {
         {/* php logo */}
         <Image
           className="relative mx-20"
-          src="images/logos/php.svg"
+          src="/images/logos/php.svg"
           alt="PHP Logo"
           width={120}
           height={37}
@@ -154,7 +154,7 @@ const Marquee_Logo = () => {
         {/* js logo */}
         <Image
           className="relative mx-20"
-          src="images/logos/javascript.svg"
+          src="/images/logos/javascript.svg"
           alt="JavaScript Logo"
           width={60}
           height={37}
@@ -162,7 +162,7 @@ const Marquee_Logo = () => {
         {/* ts logo */}
         <Image
           className="relative mx-20"
-          src="images/logos/typescript.svg"
+          src="/images/logos/typescript.svg"
           alt="TypeScript Logo"
           width={60}
           height={37}

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import Header from "./components/layouts/header/Header";
 import Scrolldown from "./components/scrolldown/Scrolldown";
 import Projects from "./components/projects/Projects";
@@ -18,15 +19,30 @@ export default function Home() {
       {/* Banner */}
       <section className="min-h-screen mx-auto px-4 py-24 relative flex justify-center">
         <div className="container mx-auto">
-          <h4 className="md:text-3xl text-xl md:text-start text-center tracking-wide">
-            Hello, my name is
-          </h4>
-          <h1 className="heading_1">
-            Ang <br />
-            Guan Xuan
-          </h1>
-          <h4 className="md:text-4xl text-2xl md:text-start text-center font-semibold tracking-wide">
-            Website & Design
+          <div className="justify-center flex flex-wrap mb-10">
+            <div className="md:w-3/12 w-72 md:flex block">
+              <Image
+                src="/images/me.png"
+                width="500"
+                height="500"
+                alt="IMAGE"
+                className="w-full max-w-md h-auto mt-auto mb-5"
+              />
+            </div>
+            <div className="md:w-9/12 w-full md:ps-10 mt-auto">
+              <h4 className="md:text-3xl text-xl md:text-start text-center tracking-wide ms-5">
+                Hello, my name is
+              </h4>
+              <h1 className="heading_1">
+                Ang
+                <br />
+                Guan Xuan
+              </h1>
+            </div>
+          </div>
+
+          <h4 className="md:text-4xl text-2xl md:text-start text-center font-semibold tracking-wide mb-20">
+            I Make Website & Design
           </h4>
           <div className="flex md:flex-row flex-col justify-between my-20">
             <div className="md:w-6/12 md:mb-0 mb-10 md:text-start text-center">
@@ -88,7 +104,7 @@ export default function Home() {
             <Expertise />
           </div>
           <div>
-            <h3 className="text-center text-2xl font-semibold text-neutral-300 mt-10">
+            <h3 className="text-center text-2xl font-semibold text-neutral-300 mt-28">
               Languages & Tools
             </h3>
             <div className="mt-10">

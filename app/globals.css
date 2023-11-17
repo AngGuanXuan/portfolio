@@ -49,12 +49,11 @@ p {
 
 .heading_1 {
   font-family: 'Heebo', sans-serif;
-  font-size: 148px;
-  line-height: 155px;
+  position: relative;
+  font-size: 128px;
+  line-height: 144px;
   font-weight: 600;
   letter-spacing: 1px;
-  margin-top: 15px;
-  margin-bottom: 15px;
 }
 
 .heading_2 {
@@ -73,8 +72,8 @@ p {
 
 @media  only screen and (max-width: 1023px) and (min-width: 768px) {
   .heading_1 {
-    font-size: 132px;
-    line-height: 132px;
+    font-size: 90px;
+    line-height: 110px;
   }
 }
 
