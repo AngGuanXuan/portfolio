@@ -13,8 +13,9 @@ const Marquee_Logo = () => {
       >
         {/* next js logo */}
         <Image
-          className="relative dark:invert mx-20
+          className="relative invert mx-20
           "
+          color="white"
           src="/next.svg"
           alt="Next.js Logo"
           width={140}
