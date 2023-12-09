@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className="scroll-smooth" lang="en">
+    <html data-theme="dark" className="scroll-smooth" lang="en">
       <body className={nunito.className}>{children}</body>
     </html>
   );

@@ -12,6 +12,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
+function goSection() {
+  window.addEventListener(
+    "hashchange",
+    () => window.history.pushState({}, "", "/"),
+    {}
+  );
+}
+
 export default function Home() {
   return (
     <main className="min-h-screen" id="main">
@@ -66,7 +74,10 @@ export default function Home() {
           </div>
         </div>
         <div className="absolute bottom-10">
+        <Link onClick={goSection} href="#project">
           <Scrolldown />
+        </Link>
+          
         </div>
       </section>
       {/* Banner End */}
