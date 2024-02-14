@@ -5,19 +5,19 @@ import { faCode } from "@fortawesome/free-solid-svg-icons";
 const Expertise = () => {
   const data = [
     {
-      title: "HTML",
-      text: "Proficient in HTML, I adeptly utilize its capabilities to engineer dynamic and user-centric websites. My portfolio exemplifies a versatile collection of projects, showcasing my prowess in delivering sophisticated online experiences.",
+      title: "React.js",
+      text: "Proficient in React JS, I adeptly utilize its capabilities to engineer dynamic and user-centric websites. My portfolio exemplifies a versatile collection of projects, showcasing my prowess in delivering sophisticated online experiences.",
     },
     {
-      title: "CSS",
-      text: "Mastering the art of CSS, I skillfully elevate web aesthetics and functionality. Explore my portfolio for a showcase of seamlessly styled and visually stunning websites. CSS is my tool for design excellence.",
+      title: "Next.js",
+      text: "Skilled in Next.js, I design and develop cutting-edge web applications with optimal performance and intuitive user interfaces, showcasing my expertise in delivering exceptional digital solutions within my portfolio.",
     },
     {
-      title: "JS",
-      text: "Commanding expertise in JavaScript, I orchestrate dynamic and interactive web solutions. Explore my portfolio to witness the fusion of creativity and functionality through innovative JavaScript-powered applications and interfaces.",
+      title: "HTML / CSS / JS",
+      text: "I demonstrate mastery in HTML, CSS, and JavaScript, seamlessly blending these skills to craft visually stunning and functionally robust websites, reflecting my expertise in frontend development.",
     },
     {
-      title: "UI/UX",
+      title: "UI / UX",
       text: "As a UI/UX specialist, I meticulously design seamless and intuitive digital experiences. My portfolio reflects a commitment to user-centric design, showcasing projects that blend aesthetic elegance with optimal functionality.",
     },
   ];
